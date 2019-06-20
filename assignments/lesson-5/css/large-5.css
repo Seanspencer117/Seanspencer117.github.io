@@ -1,11 +1,11 @@
 @media (min-width: 501px) {
 
-    .currentConditions img {
+    .current-conditions img {
         width: 100%; 
         height: auto;
     }
 
-    .Town img {
+    .hero img {
         width: 100%;
         max-width: 900px;
         height: auto;
@@ -19,8 +19,8 @@
         margin: -50px 0 0 30px;
     }
 
-    footer img {
-        max-width: 100%;
+    footer .footer-img {
+        max-width: 25%;
         height: auto;
         vertical-align: middle;
         margin: 1.2em;
@@ -40,7 +40,7 @@
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
         color: black;
-    }
+}
     .currentconditions {
         background-color: #1ccad8;
         display: inline-block;
