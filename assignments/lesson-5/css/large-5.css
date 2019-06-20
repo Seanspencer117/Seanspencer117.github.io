@@ -1,9 +1,24 @@
 @media (min-width: 501px) {
+    .fiveday{
+        display: flex;
+        vertical-align: middle;
 
-    .current-conditions img {
-        width: 100%; 
-        height: auto;
     }
+
+    .fiveday > div {
+        float: 10px;
+        border-radius: 5px;
+        background-color: rgb(207,232,220);
+        padding: 1em;
+        vertical-align: middle;
+       
+    }
+   
+    .day{
+        align-content: center
+    }
+   
+    
 
     .hero img {
         width: 100%;
@@ -13,10 +28,9 @@
 
     article img {
         float: right;
-        max-width: 25%;
-        max-height: 50%; 
-        height: auto;
-        margin: -50px 0 0 30px;
+        width: 150px;
+        height: 150px;
+        margin-right: 30px;
     }
 
     footer .footer-img {
@@ -25,44 +39,5 @@
         vertical-align: middle;
         margin: 1.2em;
     }
-
-    .office {
-        float: left;
-        max-width: 100%;
-        width: 100%;
-        height: auto;
-        vertical-align: left;
-        margin: 1.2em;
-    }
-
-    
-    body {
-        font-family: 'Roboto', sans-serif;
-        font-size: 18px;
-        color: black;
-}
-    .currentconditions {
-        background-color: #1ccad8;
-        display: inline-block;
-        vertical-align: middle;
-       
-        padding: 1rem;
-        font-size: 1.1rem;
-        border: 2px solid #036;
-        border-radius: .4em;
-        width: 3em;
-    }
-
-    .fmap{
-        float: center;
-        max-width: 100%;
-        width: 100%;
-        height: auto;
-        vertical-align: right;
-        margin: 1.2em;
-
-    }
-    
-  
 
 }
