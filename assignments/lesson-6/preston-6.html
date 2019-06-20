@@ -19,11 +19,11 @@
                 <h1>The Weather Report 2019 </h1>
                 <h4>"When the clouds appear like towers, Earth is refreshed by showers"</h4>
             </div>
-           
+            <button class="hamburger" onclick="toggleHam()">&#9776;</button>
         </header>
 
         <nav>
-            <ul>
+            <ul class = "navigation">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Preson</a></li>
                 <li><a href="#">Soda Springs</a></li>
@@ -37,26 +37,27 @@
             <h1>The Town of Preston</h1>
             <div class="Town">
                     <div class="currentConditions">
-                            <img src="/Users/SpencerHodapp/Desktop/VSC/weekly code/shodapp.github.io/assignments/lesson-5/images.jpeg/sunandwaterfall.jpeg" alt="5-day forecast">
-                            <h6> 5-Day Forecast</h6>
-                            
+                            <img src="assignments/lesson-5/images.jpeg/sunandwaterfall.jpeg" alt="5-day forecast"
+                            srcset="assignments/lesson-5/images.jpeg/sunandwaterfall.jpeg 400w, assignments/lesson-5/images.jpeg/sunandwaterfall.jpeg 1000w"
+                            sizes="(max-width: 500px) 100vw, (max-width: 1000px) 70vw">
+                            <p>Sunny 79&deg;</p>
                         </div>
                 <aside>
                     <h3>Weather Summary</h3>
                     <ul>
-                            <li>Currently: <span class="WSvalue">Sunny</span></li>
-                            <li>High: <span class="WSvalue">77&deg; F</span></li>
-                            <li>Wind Chill: <span class="WSvalue">78&deg;</span></li>
-                            <li>Humidity: <span class="WSvalue">69%</span></li>
-                            <li>Wind Speed: <span class="WSvalue">5 mph</span></li>
+                        <li>Currently: <span class="WSvalue">Sunny</span></li>
+                        <li>High: <span class="WSvalue">77&deg; F</span></li>
+                        <li>Wind Chill: <span class="WSvalue">78&deg;</span></li>
+                        <li>Humidity: <span class="WSvalue">69%</span></li>
+                        <li>Wind Speed: <span class="WSvalue">5 mph</span></li>
                     </ul>
                 </aside>
-                <img src="/Users/SpencerHodapp/Desktop/VSC/weekly code/shodapp.github.io/assignments/lesson-5/images.jpeg/starsandcar.jpeg" alt="valley image">
+                <img src="assignments/lesson-5/images.jpeg/starsandcar.jpeg" alt="valley image">
             </div>
             <article>
                 <h3 class="article-title">Founders Day Fresco</h3>
                 <p class="article-author">by Janica Juarez</p>
-                <p><img src="/Users/SpencerHodapp/Desktop/VSC/weekly code/shodapp.github.io/assignments/lesson-5/images.jpeg/campfire.jpeg" alt="campfire image">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                <p><img src="assignments/lesson-5/images.jpeg/campfire.jpeg" alt="campfire image">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. 
                     Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. 
                     Tellus id interdum velit laoreet id donec ultrices. Pharetra vel turpis nunc eget lorem dolor. 
@@ -71,28 +72,30 @@
         </main>
 
         <footer>
+            <img src="" alt="The Weather Report Team" class="fimg">
             <div class="ftext">
                 <h4>Weather or Not</h4>
                 <address>
-                   30 N 1st E<br>
-                   Preston, ID 83263<br>
-                    
+                    1122 Boogie Boogie Ave<br>
+                    Anytown, UT 84015
                 </address>
                 <p>
-                    <a href="tel:9999999999">Phone: 9999999999 <br>
-                    <a href="mailto:stheweathersite@tws.com">Email: someone@domain.com</a>
+                    <a href="tel:1111111111">Phone: 11111111111</a><br>
+                    <a href="mailto:someone@domain.com">Email: someone@domain.com</a>
                 </p>
             </div>
             <div class="fmap">
-                <img src="/Users/SpencerHodapp/Desktop/VSC/weekly code/shodapp.github.io/assignments/lesson-5/images.jpeg/idahoMap.jpeg" alt="Location Map" class="footer-map">
+                <img src="" alt="Location Map" class="footer-map">
             </div>
             <div class="fdisclosures">
                 <p>
                     &copy;THE WEATHER REPORT 2019 | One drop at a time | Spencer Hodapp <br>
-                    
                 </p>
+                <p>&copy;<span id="current-date"></span></p>
             </div>
         </footer>
+        <script src="js/current-date.js"></script>
+        <script src="js/hamburger.js"></script>
 
     </body>
 

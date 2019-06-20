@@ -14,16 +14,28 @@
     article img {
         float: right;
         max-width: 25%;
+        max-height: 50%; 
         height: auto;
         margin: -50px 0 0 30px;
     }
 
-    footer .fimg {
-        max-width: 25%;
+    footer img {
+        max-width: 100%;
         height: auto;
         vertical-align: middle;
         margin: 1.2em;
     }
+
+    .office {
+        float: left;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        vertical-align: left;
+        margin: 1.2em;
+    }
+
+    
     body {
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
@@ -33,13 +45,24 @@
         background-color: #1ccad8;
         display: inline-block;
         vertical-align: middle;
-        /* margin: 1rem 0 1rem 3rem; */
+       
         padding: 1rem;
         font-size: 1.1rem;
         border: 2px solid #036;
         border-radius: .4em;
         width: 3em;
     }
+
+    .fmap{
+        float: center;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        vertical-align: right;
+        margin: 1.2em;
+
+    }
     
+  
 
 }

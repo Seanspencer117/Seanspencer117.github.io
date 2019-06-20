@@ -1,39 +1,81 @@
 @media (max-width: 500px) {
-
-    nav ul {
+    .navigation {
+        list-style: none;
+    }
+    .navigation li {
         display: none;
+    }
+    .responsive {
+        position: relative;
+        background-color: #036;
+        margin-top: 0;
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .responsive li {
+        display: block;
+        margin: 0;
+        font-size: 1.2em;
+        line-height: 1.8em;
+    }
+    .responsive li a {
+        padding: 1rem;
+        text-align: center;
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        padding: 1rem 1.5rem;
+    }
+    .responsive li a:hover {
+        background-color: #1ccad8;
+        color: #fff;
+    }
+    
+    main, footer {
+        width: 90%;
+        margin: auto;
     }
 
     article img {
         float: right;
         max-width: 100%;
         height: auto;
-        margin: -50px 0 0 30px;
+        margin: 0 0 20px 30px;
     }
-
     footer .fimg {
         max-width: 100%;
         height: auto;
         vertical-align: middle;
         margin: 1.2em;
     }
+}
 
+.hamburger {
+    display: block;
+    position: absolute;
+    top: 2.0rem;
+    right: 1.25rem;
+    color: #fff;
+    font-size: 2em;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Muli', sans-serif;
     font-size: 18px;
-    color: black;
+    color: #036;
 }
 
 header {
-    background-color: #00ff80;
+    background-color: #369;
     text-align: center;
     padding: 1rem;
     color: #fff;
 }
 
-header > img {
+header>img {
     vertical-align: middle;
 }
 
@@ -47,11 +89,11 @@ header > img {
     font-style: italic;
 }
 
-.currentconditions {
+.currentConditions {
     background-color: #1ccad8;
     display: inline-block;
     vertical-align: middle;
-    
+    /* margin: 1rem 0 1rem 3rem; */
     padding: 1rem;
     font-size: 1.1rem;
     border: 2px solid #036;
@@ -59,48 +101,21 @@ header > img {
     width: 3em;
 }
 
-.currentconditions img, .Town img {
-  
-    max-width: 100%; 
+.currenonditions img,
+.Town img {
+    max-width: 100%;
     height: auto;
 }
 
-.currentconditions p {
+.currentConditions p {
     display: inline;
 }
 
-nav {
-    background-color: #036;
-}
 
-nav ul {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
-
-nav li {
-    display: inline-block;
-    font-size: 1.2em;
-    line-height: 1.8em;
-}
-
-nav a {
-    display: block;
-    color: #fff;
-    padding: 1rem 1.5rem;
-    text-decoration: none;
-}
-
-nav a:hover {
-    background-color: #1ccad8;
-}
-
-main, footer {
+footer {
     width: 52.5%;
     margin: auto;
-}
+} 
 
 main h1 {
     text-align: center;
@@ -108,7 +123,6 @@ main h1 {
 
 .Town {
     width: 100%;
-    /* border: 1px solid #036; */
     position: relative;
     color: #fff;
 }
@@ -119,7 +133,7 @@ main h1 {
     position: absolute;
     top: 20px;
     left: 20px;
-    border: 2px solid #036; 
+    border: 2px solid #036;
     border-radius: .4em;
     padding: 1rem;
 }
@@ -136,11 +150,8 @@ main h1 {
 .Town aside ul li {
     padding: 0 0 5px 0;
 }
-.Town img{
-    display: none
-}
 
-.currentCondtions {
+.WSvalue {
     color: #f4e04d;
 }
 
@@ -151,13 +162,6 @@ article {
     padding: 1em;
     margin: 1em 0;
     color: #fff;
-}
-
-article img {
-    float: right;
-    max-width: 25%;
-    height: auto;
-    margin: -50px 0 0 30px;
 }
 
 footer {
@@ -175,6 +179,12 @@ footer .ftext {
 footer .fmap {
     display: inline-block;
     vertical-align: middle;
-    /* max-width: 25%;
-    height: auto; */
+   
+}
+
+footer .fdisclosures {
+    background-color: #036 !important;
+    text-align: center;
+    color: #fff;
+    padding: .5em;
 }
